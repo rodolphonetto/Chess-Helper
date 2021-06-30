@@ -12,6 +12,10 @@ import {
 } from './types';
 import { i18n } from './i18n';
 
+let audioAmbiguo: any
+let audioIlegal: any
+let audioInvalido: any
+
 // value is stored inside of chessboard.rightClickMarkColors
 export const RED_SQUARE_COLOR = '#f42a32';
 
@@ -45,7 +49,7 @@ export function holdingCtrlOrCmd(e: KeyboardEvent) {
 /**
  * Write some message to the user
  */
-export function postMessage(text: string) {
+export function postMessage(text: string, type: string) {
   const messagesContainer = document.getElementById('ccHelper-messages');
 
   if (messagesContainer) {
@@ -53,6 +57,18 @@ export function postMessage(text: string) {
     message.className = 'ccHelper-messagesItem';
     message.textContent = text;
     messagesContainer.appendChild(message);
+
+    if (type === 'ambiguos') {
+      audioAmbiguo.play()
+    }
+
+    if (type === 'illegal') {
+      audioIlegal.play()
+    }
+
+    if (type === 'incorrect') {
+      audioInvalido.play()
+    }
 
     setTimeout(() => {
       messagesContainer.removeChild(message);
@@ -130,6 +146,15 @@ export function createInitialElements() {
   `);
   const input = <HTMLInputElement>wrapper.querySelector('#ccHelper-input');
   const unfocusedLabel = <HTMLElement>wrapper.querySelector('.ccHelper-label');
+
+  document.addEventListener('errorAudios', function (e: Event)
+  {
+    const url=(<CustomEvent>e).detail
+    
+    audioAmbiguo = new Audio(url[0]);
+    audioIlegal = new Audio(url[1]);
+    audioInvalido = new Audio(url[2]);
+  });
 
   return {
     wrapper,

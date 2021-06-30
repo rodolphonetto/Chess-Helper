@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "Chess.com Keyboard"
+    "message": "Chess voice commands"
   },
   "appDescription": {
-    "message": "Расширение, позволяющее делать ходы на Chess.com, используя клавиатуру"
+    "message": "Está extensão permite entrar com lances via teclado e ouvir os lances no chess.com"
   }
 }

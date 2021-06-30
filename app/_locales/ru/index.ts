@@ -3,19 +3,19 @@ import {
 } from '../../src/types';
 
 const translations : TLocaleSet = {
-  inputHint: 'Введите ход или нажмите / для вызова команд...',
-  focusHint: 'Нажмите C для ввода хода...',
-  focusHintFromOther: 'Нажмите Esc + C для ввода хода...',
-  ambiguousMove: '$move: найдено более 1 хода',
-  incorrectMove: 'Некорректный ход: $move',
-  illegalMove: 'Невозможно сделать ход $move',
-  commandNotFound: 'Команда $command не найдена',
-  blindFoldPeekHint: 'Наведите курсор сюда или нажмите $key чтобы увидеть доску',
-  blindFoldOn: 'Режим игры вслепую включен',
-  blindfoldToggleHint: 'Нажмите сюда или введите /blindfold для выключения',
-  _test: 'Test content',
-  _test_1_placeholder: 'Test content $name1',
-  _test_2_placeholders: 'Test content $name1 $name2',
+  inputHint: 'Digite o lance or digite / para ver os comandos...',
+  focusHint: 'Aperte C para dar foco no campo de lances...',
+  focusHintFromOther: 'Aperte Esc + C dar foco no campo de lances...',
+  ambiguousMove: 'Lance ambíguo: $move',
+  incorrectMove: 'Lance invalido: $move',
+  illegalMove: 'Lance $move é ilegal',
+  commandNotFound: "Não encontrei o comando $command",
+  blindFoldPeekHint: 'Passe o mouse aqui ou aperte $key to olhar',
+  blindFoldOn: 'O modo as cegas está ativado',
+  blindfoldToggleHint: 'Clique aqui ou digite /blindfold para mudar',
+  _test: 'Conteudo teste',
+  _test_1_placeholder: 'Conteudo teste $name1',
+  _test_2_placeholders: 'Conteudo teste $name1 $name2',
 };
 
 export default translations;

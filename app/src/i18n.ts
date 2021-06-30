@@ -10,7 +10,7 @@ import en from '../_locales/en';
 import ru from '../_locales/ru';
 export const LOCALES = {
   en,
-  ru,
+  ru
 };
 
 export function i18n(

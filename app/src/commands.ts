@@ -29,7 +29,7 @@ export function parseCommand(input: string) {
     const command = commands[input.slice(1)];
 
     return command || (() => {
-      postMessage(i18n('commandNotFound', { command: input }));
+      postMessage(i18n('commandNotFound', { command: input }), 'Não encontrado');
     });
   }
 

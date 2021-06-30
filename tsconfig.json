@@ -5,13 +5,13 @@
         "ES2017",
         "dom"
     ],
-    "strict": true,
+    "strict": false,
     "moduleResolution": "node",
     "rootDirs": ["app/src"],
     "typeRoots": [
         "./node_modules/@types",
         "./app/src/custom-definitions"
     ],
-    "esModuleInterop": true
+    "esModuleInterop": true,
   }
 }

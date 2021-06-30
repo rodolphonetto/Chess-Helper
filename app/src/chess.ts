@@ -105,9 +105,9 @@ export function go(board: IChessboard, input: string) : boolean {
 
     return true;
   } else if (moves.length > 1) {
-    postMessage(i18n('ambiguousMove', { move: input }));
+    postMessage(i18n('ambiguousMove', { move: input }), 'ambiguos');
   } else {
-    postMessage(i18n('incorrectMove', { move: input }));
+    postMessage(i18n('incorrectMove', { move: input }), 'incorrect');
   }
 
   return false;
@@ -132,7 +132,7 @@ export function makeMove(
       }
   } else {
     const move = fromField + '-' + toField;
-    postMessage(i18n('illegalMove', { move }));
+    postMessage(i18n('illegalMove', { move }), 'illegal');
   }
 }
 
