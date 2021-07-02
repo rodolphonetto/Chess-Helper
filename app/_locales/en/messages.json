@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "Chess.com Keyboard"
+    "message": "Chess voice commands"
   },
   "appDescription": {
-    "message": "This browser extension allows you to make moves on Chess.com using your keyboard"
+    "message": "Está extensão permite entrar com lances via teclado e ouvir os lances no chess.com"
   }
 }

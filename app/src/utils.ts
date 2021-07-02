@@ -15,6 +15,7 @@ import { i18n } from './i18n';
 let audioAmbiguo: any
 let audioIlegal: any
 let audioInvalido: any
+let inputText:any
 
 // value is stored inside of chessboard.rightClickMarkColors
 export const RED_SQUARE_COLOR = '#f42a32';
@@ -60,14 +61,17 @@ export function postMessage(text: string, type: string) {
 
     if (type === 'ambiguos') {
       audioAmbiguo.play()
+      inputText.value = ''
     }
 
     if (type === 'illegal') {
       audioIlegal.play()
+      inputText.value = ''
     }
 
     if (type === 'incorrect') {
       audioInvalido.play()
+      inputText.value = ''
     }
 
     setTimeout(() => {
@@ -146,7 +150,7 @@ export function createInitialElements() {
   `);
   const input = <HTMLInputElement>wrapper.querySelector('#ccHelper-input');
   const unfocusedLabel = <HTMLElement>wrapper.querySelector('.ccHelper-label');
-
+  inputText = wrapper.querySelector('#ccHelper-input')
   document.addEventListener('errorAudios', function (e: Event)
   {
     const url=(<CustomEvent>e).detail

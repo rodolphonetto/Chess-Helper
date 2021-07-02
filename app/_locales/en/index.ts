@@ -3,19 +3,19 @@ import {
 } from '../../src/types';
 
 const translations : TLocaleSet = {
-  inputHint: 'Enter your move or type / to see commands...',
-  focusHint: 'Press C to focus move field...',
-  focusHintFromOther: 'Press Esc + C to focus move field...',
-  ambiguousMove: 'Ambiguous move: $move',
-  incorrectMove: 'Incorrect move: $move',
-  illegalMove: 'Move $move is illegal',
-  commandNotFound: "Can't find command $command",
-  blindFoldPeekHint: 'Hover here or hold $key to peek',
-  blindFoldOn: 'Blindfold mode is on',
-  blindfoldToggleHint: 'Click here or type /blindfold to toggle',
-  _test: 'Test content',
-  _test_1_placeholder: 'Test content $name1',
-  _test_2_placeholders: 'Test content $name1 $name2',
+  inputHint: 'Digite o lance or digite / para ver os comandos...',
+  focusHint: 'Aperte C para dar foco no campo de lances...',
+  focusHintFromOther: 'Aperte Esc + C dar foco no campo de lances...',
+  ambiguousMove: 'Lance ambíguo: $move',
+  incorrectMove: 'Lance invalido: $move',
+  illegalMove: 'Lance $move é ilegal',
+  commandNotFound: "Não encontrei o comando $command",
+  blindFoldPeekHint: 'Passe o mouse aqui ou aperte $key to olhar',
+  blindFoldOn: 'O modo as cegas está ativado',
+  blindfoldToggleHint: 'Clique aqui ou digite /blindfold para mudar',
+  _test: 'Conteudo teste',
+  _test_1_placeholder: 'Conteudo teste $name1',
+  _test_2_placeholders: 'Conteudo teste $name1 $name2',
 };
 
 export default translations;
