@@ -7,10 +7,10 @@ import {
 } from './types';
 
 import en from '../_locales/en';
-import ru from '../_locales/ru';
+import pt_BR from '../_locales/pt_BR';
 export const LOCALES = {
   en,
-  ru
+  pt_BR
 };
 
 export function i18n(

@@ -1,0 +1,8 @@
+{
+  "appName": {
+    "message": "Chess voice commands"
+  },
+  "appDescription": {
+    "message": "Está extensão permite entrar com lances via teclado e ouvir os lances no chess.com"
+  }
+}
